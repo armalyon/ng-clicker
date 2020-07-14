@@ -1,0 +1,16 @@
+table {
+  width: 100%;
+  font-size: 24px;
+}
+td {
+  margin-left: 10px;
+}
+
+.stats-container {
+  margin-left: 10px;
+}
+
+th {
+  font-weight: bold;
+  margin-top: 5px;
+}

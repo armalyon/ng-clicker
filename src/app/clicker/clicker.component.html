@@ -1,0 +1,6 @@
+<div class="container">
+  <div>
+    <countdown #cd class="timer-centered" [config]="config" (event)="onEvent($event)"></countdown>
+  </div>
+  <button mat-fab class="mat-fab-centered" color="primary" (click)="addClick()">Click</button>
+</div>

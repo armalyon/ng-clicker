@@ -1,0 +1,15 @@
+<div class="stats-container">
+  <h4>Table of results</h4>
+  <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    <ng-container matColumnDef="userName">
+      <th mat-header-cell *matHeaderCellDef><h4>Name</h4></th>
+      <td mat-cell *matCellDef="let result"> {{result.userName}} </td>
+    </ng-container>
+    <ng-container matColumnDef="result">
+      <th mat-header-cell *matHeaderCellDef><h4> Result</h4></th>
+      <td mat-cell *matCellDef="let result"> {{result.result}} </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>
+    <tr mat-row *matRowDef="let rowData; columns: columnsToDisplay"></tr>
+  </mat-table>
+</div>
