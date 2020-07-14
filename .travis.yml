@@ -1,19 +1,16 @@
 language: node_js
 node_js:
-  - '10'
-
+- '10'
 before_install:
-  - npm install -g @angular/cli
+- npm install -g @angular/cli
 install: npm install
-
 branches:
   only:
-    - master
-
+  - master
 deploy:
   provider: heroku
   api_key:
-    secure: "d777f538-d60a-4da4-bc91-f8dbc31ef760"
+    secure: JfASLro231etwIg0ZR4Sp5aWu0xP7strLpJJZfcvDNHSgozl6f/PNpPnwQCNdHCzayUZEWQHyBVdvw11WX1n0Faxib/yTpTi9ChSTMD0vtG/3EWAPuJio6uBHQwA3JWhTlyKqPjDMCZRb+NxhIfbkyAp0U0hM5d8OlCSq40HFgqeHJgfJjwcuVvnr+yUWcqM7A4Jw/0LjMB8kR5Iq2q39o05HzO0iSsAUXOsIL3gsj6Ou+EzTd+f26b1AiUSNKerllBD3Di45z8bOzlhTZTrufQcjzmsDN+w1oGrvRXlXBWhSZ/3wfXbf0HjWP4umUB8l/Vtpk0aGbzBQFU3oeySvNXreuwZJerNrf9sYdwrbFiDeoCi91lCC+brZl6pB0if1YpMBYQxHgu8B7fju2BkcHAzM9zHYFNIVyAaB57HF//8LTvpudVlLvLs7M/rEQl9/gDYiujvQGQjdcL+rwMyEUQYNeJvur6kI6g35Gn701HU6WbmnIR3yrJbjz9/PL6liDHtVcgsra2NOFTeyoR7alrcDcvqcsqWdVhogwOEaIJHJ8/SpTLU/cFgUzEanXNmbyccBOJu6w5OEghNAGkkBbLzR/JzjWRgsk4DC+dCu9r52BR8BSiWTYQ2XkOIzw5a5tzU5VRXWkaLD7Bs72NtIAI+e+DPaYISt2F02s2tqlM=
   app: ng-click
   on:
     repo: armalyon/ng-clicker
